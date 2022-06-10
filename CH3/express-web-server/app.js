@@ -1,8 +1,12 @@
 "use strict";
 const express = require("express");
 const createError = require("http-errors");
+const indexRoutes = require("./routes");
+const helloRoutes = require("./routes/hello");
 
 const app = express();
+app.use("/", indexRoutes);
+app.use("/hello", helloRoutes);
 
 app.use((req, res, next) => {
   if (req.method !== "GET") {
