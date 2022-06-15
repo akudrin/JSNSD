@@ -31,6 +31,7 @@ const root = `<html>
 
 const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "text/html");
+
   if (req.method !== "GET") {
     res.statusCode = 405;
     res.end(STATUS_CODES[res.statusCode] + "\r\n");

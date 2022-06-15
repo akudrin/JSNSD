@@ -5,7 +5,7 @@ const router = Router();
 const hello = `<html>
   <head>
     <style>
-     body { background: #333 margin: 1.25rem }
+     body { background: #d61c1c; margin: 1.25rem }
      h1 { color: #EEE; font-family: sans-serif }
     </style>
   </head>
