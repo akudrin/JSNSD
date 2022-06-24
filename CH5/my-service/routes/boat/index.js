@@ -1,10 +1,9 @@
-"use strict";
 const { promisify } = require("util");
-const { bicycle } = require("../../model");
-const { uid } = bicycle;
-const read = promisify(bicycle.read);
-const create = promisify(bicycle.create);
-const update = promisify(bicycle.update);
+const { boat } = require("../../model");
+const { uid } = boat;
+const read = promisify(boat.read);
+const create = promisify(boat.create);
+const update = promisify(boat.update);
 
 module.exports = async (fastify, opts) => {
   const { notFound } = fastify.httpErrors;
